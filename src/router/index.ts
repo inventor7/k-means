@@ -8,6 +8,7 @@ const router = createRouter({
   routes: [...publicRoutes, ...authenticatedRoutes],
 });
 
+console.log(import.meta.env.VITE_DEFAULT_LOCALE);
 router.beforeEach(useLanguageGuard);
 
 export default router;

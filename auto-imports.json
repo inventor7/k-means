@@ -500,6 +500,11 @@
   },
   {
     "from": "@vueuse/core",
+    "name": "createRef",
+    "as": "createRef"
+  },
+  {
+    "from": "@vueuse/core",
     "name": "createReusableTemplate",
     "as": "createReusableTemplate"
   },

@@ -21,11 +21,11 @@ export const useLanguageGuard = async (
   const languageStore = useLanguageStore();
 
   if (!paramsLocale) {
-    return next(`/${defaultLocale}${to.fullPath}`);
+    return next(`${defaultLocale}${to.fullPath}`);
   }
 
   if (!SUPPORT_LOCALES.includes(paramsLocale)) {
-    return next(`/${defaultLocale}${to.fullPath}`);
+    return next(`${defaultLocale}${to.fullPath}`);
   }
 
   if (!i18n.global.availableLocales.includes(paramsLocale)) {
