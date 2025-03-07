@@ -1,6 +1,8 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 
+import { inject } from "@vercel/analytics";
+
 import "@/assets/index.css";
 
 import App from "./App.vue";
