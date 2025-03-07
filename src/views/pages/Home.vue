@@ -11,11 +11,13 @@
     </ol>
   </div>
 
-  <div class="border border-gray-300 rounded-lg mb-4 overflow-hidden">
+  <div
+    class="w-full border border-gray-300 rounded-lg mb-4 flex justify-center"
+  >
     <canvas
       ref="canvasRef"
-      width="600"
       height="400"
+      width="600"
       class="bg-white"
       @mousedown="handleCanvasMouseDown"
       @mousemove="handleCanvasMouseMove"
